@@ -26,14 +26,13 @@
     }
 
     /* STARFIELD BACKGROUND */
+    /* Performance-Optimized Background */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
       z-index: -1;
-      background: radial-gradient(circle at 50% 20%, rgba(0,183,255,0.25), transparent 60%),
-                  radial-gradient(circle at 80% 80%, rgba(0,183,255,0.2), transparent 70%),
-                  radial-gradient(circle at 20% 60%, rgba(255,255,255,0.08), transparent 70%);
+      background:#000;
       background-color: #000;
     }
 
@@ -132,6 +131,39 @@
       <a href="mailto:contact@" target="_blank">Peer Review Contact</a>
     </div>
   </header>
+
+  <!-- Navigation -->
+  <nav style="position:sticky;top:0;background:#000a;border-bottom:1px solid var(--neon);padding:10px 20px;backdrop-filter:blur(6px);z-index:999;">
+    <div style="max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;">
+      <span style="color:var(--neon);font-weight:700;letter-spacing:1px;">CORNELIUS AURELIUS — Research</span>
+      <div style="display:flex;gap:20px;">
+        <a href="#about" style="color:var(--neon);text-decoration:none;">About</a>
+        <a href="#papers" style="color:var(--neon);text-decoration:none;">Publications</a>
+        <a href="#peer" style="color:var(--neon);text-decoration:none;">Peer Review</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" style="padding:60px 20px;max-width:900px;margin:auto;text-align:center;">
+    <h2 style="color:var(--neon);font-size:2rem;margin-bottom:20px;">About the Research</h2>
+    <p style="opacity:0.85;line-height:1.6;font-size:1.1rem;">
+      Cornelius Aurelius is an independent researcher specialising in Unified Informational Physics, Awareness-Based Cosmology,
+      and the Omniscientrix Framework (vΩ). His work spans the full informational architecture of the universe — including
+      foundational laws, trans-tier structures, cosmological predictions, and multi-domain informational dynamics.
+    </p>
+    <p style="opacity:0.85;margin-top:20px;line-height:1.6;font-size:1.1rem;">
+      All research is published openly on Zenodo to ensure public accessibility, scientific transparency, and global peer review.
+      Contributions, critiques, and independent validations are welcomed.
+    </p>
+  </section>
+
+  <!-- Peer Review CTA -->
+  <section id="peer" style="padding:60px 20px;max-width:900px;margin:auto;text-align:center;">
+    <h2 style="color:var(--neon);font-size:2rem;margin-bottom:20px;">Peer Review & Collaboration</h2>
+    <p style="opacity:0.85;font-size:1.1rem;line-height:1.6;">Researchers, physicists, mathematicians, and interdisciplinary scientists are invited to provide peer review, analysis, or direct collaboration.</p>
+    <a href="mailto:138licensing@gmail.com" style="display:inline-block;margin-top:25px;padding:14px 28px;background:var(--neon);color:#000;font-weight:700;border-radius:8px;text-decoration:none;">Contact: 138licensing@gmail.com</a>
+  </section>
 
   <section id="papers">
     <h2 style="text-align:center;margin-bottom:30px;color:var(--neon);font-size:1.7rem;">Zenodo Research Papers</h2>
