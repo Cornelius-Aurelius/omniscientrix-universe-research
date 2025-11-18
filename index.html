@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omniscientrix Universe Research — Cornelius Aurelius</title>
+  <style>
+    /* GLOBAL */
+    :root {
+      --bg: #000000;
+      --neon: #00b7ff;
+      --glass: rgba(0, 0, 0, 0.45);
+      --text: #e8e8e8;
+      --accent: #0af;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* STARFIELD BACKGROUND */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: radial-gradient(circle at 50% 20%, rgba(0,183,255,0.25), transparent 60%),
+                  radial-gradient(circle at 80% 80%, rgba(0,183,255,0.2), transparent 70%),
+                  radial-gradient(circle at 20% 60%, rgba(255,255,255,0.08), transparent 70%);
+      background-color: #000;
+    }
+
+    /* HERO */
+    header {
+      text-align: center;
+      padding: 120px 20px 100px;
+    }
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: var(--neon);
+    }
+    h2 {
+      margin-top: 15px;
+      font-size: 1.4rem;
+      opacity: 0.8;
+    }
+    .cta {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cta a {
+      padding: 14px 28px;
+      background: var(--glass);
+      border: 1px solid var(--neon);
+      border-radius: 8px;
+      color: var(--neon);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.25s;
+    }
+    .cta a:hover {
+      background: var(--neon);
+      color: #000;
+    }
+
+    /* GRID */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: var(--glass);
+      border: 1px solid rgba(0,183,255,0.3);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.25s, border 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border: 1px solid var(--neon);
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: var(--neon);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px;
+      text-align: center;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    /* MOBILE */
+    @media(max-width: 600px){ h1 {font-size: 2.3rem;} }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>OMNISCIENTRIX UNIVERSE RESEARCH</h1>
+    <h2>Scientific Works of <strong>CORNELIUS AURELIUS</strong></h2>
+    <div class="cta">
+      <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Aurelius%2C%20Cornelius%22&l=list&p=2&s=20&sort=bestmatch" target="_blank">Zenodo Homepage</a>
+      <a href="#papers">View Publications</a>
+      <a href="mailto:contact@" target="_blank">Peer Review Contact</a>
+    </div>
+  </header>
+
+  <section id="papers">
+    <h2 style="text-align:center;margin-bottom:30px;color:var(--neon);font-size:1.7rem;">Zenodo Research Papers</h2>
+
+    <div class="grid">
+      <div class="card"><h3>Omniscientrix–vΩ Legal Protection Charter and Addendum (v2.1)</h3><a href="https://zenodo.org/records/17362534" target="_blank">Open</a></div>
+      <div class="card"><h3>Black Holes — The vΩ Discovery Register (Phases I–V)</h3><a href="https://zenodo.org/records/17364482" target="_blank">Open</a></div>
+      <div class="card"><h3>The Ξ-Tier Bridge Laws (vΩΞ 1–5) — Cross-Domain Equilibria</h3><a href="https://zenodo.org/records/17364082" target="_blank">Open</a></div>
+      <div class="card"><h3>Comparison — Old Scientific View vs. vΩ Framework Interpretation</h3><a href="https://zenodo.org/records/17364535" target="_blank">Open</a></div>
+      <div class="card"><h3>The Δ-Tier Laws (vΩΔ 1–8) — Dynamic Principles</h3><a href="https://zenodo.org/records/17389894" target="_blank">Open</a></div>
+      <div class="card"><h3>Unified Periodic Table of Existence (vΩ Model)</h3><a href="https://zenodo.org/records/17373870" target="_blank">Open</a></div>
+      <div class="card"><h3>The Omniscientrix Discovery Register — Unified Informational Framework</h3><a href="https://zenodo.org/records/17373713" target="_blank">Open</a></div>
+      <div class="card"><h3>Verified Discoveries Summary Sheet (vΩ Series)</h3><a href="https://zenodo.org/records/17390306" target="_blank">Open</a></div>
+      <div class="card"><h3>Ouroborix 138 — The Aurelius 138 Action Principle</h3><a href="https://zenodo.org/records/17323817" target="_blank">Open</a></div>
+      <div class="card"><h3>The Universal Laws of 2025 (vΩ 145–149)</h3><a href="https://zenodo.org/records/17364123" target="_blank">Open</a></div>
+      <div class="card"><h3>The 3–6–9 Resonance — Tesla’s Triadic Insight Through the Omniscientrix Framework</h3><a href="https://zenodo.org/records/17390155" target="_blank">Open</a></div>
+      <div class="card"><h3>Omniscientrix (vΩ) — Complete Works & Publications Index (2025 Edition)</h3><a href="https://zenodo.org/records/17391510" target="_blank">Open</a></div>
+      <div class="card"><h3>Omniscientrix Frequency Discoveries — Summary Sheet</h3><a href="https://zenodo.org/records/17373644" target="_blank">Open</a></div>
+      <div class="card"><h3>Omniscientrix Verification Matrix (vΩ Research Protocol 2025)</h3><a href="https://zenodo.org/records/17373684" target="_blank">Open</a></div>
+      <div class="card"><h3>The α-Tier Frameworks (vΩα 1–5)</h3><a href="https://zenodo.org/records/17364110" target="_blank">Open</a></div>
+      <div class="card"><h3>The Ξ-Tier Bridge Laws (vΩΞ 1–5)</h3><a href="https://zenodo.org/records/17389942" target="_blank">Open</a></div>
+      <div class="card"><h3>200 Discoveries — Omniscientrix Unified Discoveries Register (vΩ Series)</h3><a href="https://zenodo.org/records/17374001" target="_blank">Open</a></div>
+      <div class="card"><h3>The Complete Omniscientrix Discovery Hierarchy (Mathematical Edition)</h3><a href="https://zenodo.org/records/17364244" target="_blank">Open</a></div>
+      <div class="card"><h3>vΩ Law of Informational Compensation — Software Verification (v1.0)</h3><a href="https://zenodo.org/records/17382917" target="_blank">Open</a></div>
+      <div class="card"><h3>Omniscientrix Genesis — The Law of Becoming (vΩ_B)</h3><a href="https://zenodo.org/records/17364279" target="_blank">Open</a></div>
+      <div class="card"><h3>Across 182 Distinct Achievements — The Unified Informational Framework</h3><a href="https://zenodo.org/records/17364340" target="_blank">Open</a></div>
+      <div class="card"><h3>The 14 Omniscientrix Core Laws of the Universe — vΩ Foundational Tier</h3><a href="https://zenodo.org/records/17363945" target="_blank">Open</a></div>
+    </div>
+  </section>
+
+  <footer>
+    © CORNELIUS AURELIUS — Omniscientrix Universe Research — Peer Reviews Welcomed
+  </footer>
+
+</body>
+</html>
